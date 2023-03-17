@@ -56,3 +56,53 @@ body {
   display: flex;
   justify-content: space-between;
 }
+
+.article__actions{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+  padding-bottom: 15px;
+}
+
+.article__btn{
+  font-weight: 600;
+  padding: 5px 20px;
+  background-color: orange;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease 0s;
+  min-width: 172px;
+  cursor: pointer;
+  &:hover {
+      color: #fff;
+  }
+}
+
+
+
+.lang{
+  display: flex;
+  margin-top: 5px;
+}
+.lang-btn{
+  background-color: #46b1de;
+  color: #fff;
+  border: 2px solid darkblue;
+  padding: 3px 10px;
+  display: block;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+.lang-btn:not(:last-child){
+  margin-right: 50px;
+}
+.lang-btn.active{
+  background-color: rgb(81, 103, 36);
+  border: 2px solid rgb(0, 0, 0);
+}

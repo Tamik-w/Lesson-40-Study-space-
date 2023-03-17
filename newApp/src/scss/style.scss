@@ -1,0 +1,58 @@
+$button-color: orange;
+
+/*NULL*/
+h1,h2,h3,p{margin: 0;}
+/*NULL*/
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper{
+    max-width: 670px;
+}
+.title{
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px 0px;
+    background-color: #46b1de;
+    margin-bottom: 15px;
+}
+.article{
+    background-color: olivedrab;
+}
+.article__title{
+    margin-bottom: 10px;
+}
+.article__title h2{
+    text-align: center;
+}
+
+//BUTTONS
+
+.buttons-container {
+ display: flex;
+ justify-content: space-around;
+}
+
+.article-button {
+  margin: 5px;
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-weight: 600;
+  border: transparent;
+  background-color: $button-color;
+  transition: 0.2s;
+
+  &:hover {
+    background-color: rgb(196, 127, 0);
+  }
+}
+
+.author-container {
+  font-weight: 600;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}

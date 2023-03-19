@@ -2,15 +2,14 @@ import React from "react";
 import ArticleAuthor from "../ArticleAuthor/ArticleAuthor";
 import ArticleBody from "../ArticleBody/ArticleBody";
 
-function Article(props) {
-  
-    return (
+const Article = (props) => {
+  console.log(props)
+  return (
     <>
-    {props.children}
-    <ArticleBody show={props.show} text={props.text} />
-    <ArticleAuthor /> 
+      {props.children}
+      <ArticleBody lang={props.lang} read={props.read} show={props.show} />
+      <ArticleAuthor lang={props.lang} /> 
     </>
-    );
-  }
+  );
+}
   export default Article;
-
